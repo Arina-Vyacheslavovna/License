@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <ul>
+            <li id="li1" onclick="check1()">
+                <input type="radio" name="license" id="flagLicense1">
+                <label class="license" for="flagLicense1">
+                    License plan #1</label>
+                <label class="priceLicense" for="flagLicense1">$13 per license</label>
+            </li>
+            <li id="li2" onclick="check2()">
+                <input type="radio" name="license" id="flagLicense2">
+                <label class="license" for="flagLicense2">
+                    License plan #2</label>
+                <label class="priceLicense" for="flagLicense2">$22 per license</label>
+            </li>
+            <li id="li3" onclick="check3()">
+                <input type="radio" name="license" id="flagLicense3">
+                <label class="license" for="flagLicense3">
+                    License plan #3</label>
+                <label class="priceLicense" for="flagLicense3">$34 per license</label>
+            </li>
+        </ul>
+        <hr>
+        <div class="number">
+            <p>Number of license: </p>
+            <div class="blockSelect">
+                <select name="numberLicense" id="numberLicense" onclick="calculate()">
+                    <option value="0" selected>0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                </select>
+            </div>
+        </div>
+        <hr>
+        <div class="total">
+            <p>Total: &#160;</p>
+            <p class="price"> $ <span id="totalPrice">0</span> <sup>US</sup>
+            </p>
+        </div>
+        <div class="button">
+            <a href="https://learn.javascript.ru/"><button>Buy Now</button></a>
+        </div>
+        <div class="selectedPlan">
+            <p>Selected plan: &#160;</p>
+            <p id="plan"> none</p>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="./main.js"></script>
+</body>
+
+</html>
